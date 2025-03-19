@@ -1,0 +1,27 @@
+[project]
+name = "langchain-academy"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "langchain-community>=0.3.20",
+    "langchain-core>=0.3.45",
+    "langchain-openai>=0.3.9",
+    "langgraph>=0.3.16",
+    "langgraph-checkpoint-sqlite>=2.0.6",
+    "langgraph-cli[inmem]>=0.1.77",
+    "langgraph-sdk>=0.1.57",
+    "langsmith>=0.3.17",
+    "notebook>=7.3.3",
+    "tavily-python>=0.5.1",
+    "trustcall>=0.0.38",
+    "wikipedia>=1.4.0",
+]
+
+
+[[tool.uv.index]]
+url = "https://mirrors.aliyun.com/pypi/simple"
+name = "aliyun"
+default = true
+
