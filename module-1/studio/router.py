@@ -5,7 +5,7 @@ from llm_util import llm
 
 # Tool
 def multiply(a: int, b: int) -> int:
-    """Multiplies a and b.
+    """multiply a and b.
 
     Args:
         a: first int

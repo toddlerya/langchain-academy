@@ -1,4 +1,3 @@
-from IPython.display import Image, display
 from langchain_core.messages import HumanMessage
 from langgraph.graph import END, START, MessagesState, StateGraph
 from llm_util import llm
@@ -55,9 +54,9 @@ builder.add_edge("tool_calling_llm", END)
 graph = builder.compile()
 
 # View
-print(graph.get_graph().draw_mermaid())
-display(Image(graph.get_graph().draw_mermaid_png()))
+# print(graph.get_graph().draw_mermaid())
+# display(Image(graph.get_graph().draw_mermaid_png()))
 
-messages = graph.invoke({"messages": HumanMessage(content="2乘以3等于几")})
-for m in messages["messages"]:
-    m.pretty_print()
+# messages = graph.invoke({"messages": HumanMessage(content="2乘以3等于几")})
+# for m in messages["messages"]:
+#     m.pretty_print()
