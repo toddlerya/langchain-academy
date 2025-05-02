@@ -39,3 +39,5 @@ builder.add_edge("tools", END)
 
 # Compile graph
 graph = builder.compile()
+
+print(graph.get_graph().draw_mermaid())
